@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-List на FastAPI</title>
+    <script src="./js/db.js" defer type="module"></script>
+    <script src="./js/response.js" defer type="module"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +18,16 @@
             <div class="todo-content">  
                 <div class="todo-add">
                     <input type="text" placeholder="Введите задачу" id="todoInput">
-                    <button class="todo-add__button">
+                    <button class="todo-add__button" id="todoAddButton" type="button">
                         <img src="./img/plus.svg" alt="">
                     </button>
                 </div>
 
                 <div class="todo-box">
-                    <div class="todo-item">
+                    <!-- <div class="todo-item">
                         <div class="todo-item__content">
                             <span class="todo-item__id">1</span>
-                            <p class="todo-item__task"></p>
+                            <p class="todo-item__task">Купить сыр</p>
                         </div>
                         <div class="todo-action">
                             <button class="todo-action__delete">
@@ -34,37 +37,9 @@
                                 <img src="./img/done.svg" alt="">
                             </button>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="todo-item">
-                        <div class="todo-item__content">
-                            <span class="todo-item__id">1</span>
-                            <p class="todo-item__task">Магазин</p>
-                        </div>
-                        <div class="todo-action">
-                            <button class="todo-action__delete">
-                                <img src="./img/delete.svg" alt="">
-                            </button>
-                            <button class="todo-action__done">
-                                <img src="./img/done.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="todo-item">
-                        <div class="todo-item__content">
-                            <span class="todo-item__id">1</span>
-                            <p class="todo-item__task">Магазин</p>
-                        </div>
-                        <div class="todo-action">
-                            <button class="todo-action__delete">
-                                <img src="./img/delete.svg" alt="">
-                            </button>
-                            <button class="todo-action__done">
-                                <img src="./img/done.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

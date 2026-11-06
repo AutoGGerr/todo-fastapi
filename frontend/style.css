@@ -144,7 +144,8 @@ input[type='file'] {
 /* todo item */
 
 .todo-item__task{
-	max-width: 200px;
+	text-wrap: wrap;
+	
 }
 
 .todo-item{
